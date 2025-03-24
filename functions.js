@@ -1,13 +1,13 @@
-/* Looping a Triangle
+// Looping a Triangle
 
-Write a loop that makes seven calls to console.log [...]*/
+/* Write a loop that makes seven calls to console.log [...] */
 
 for (let i = '#'; i.length <= 7; i += '#') {
     console.log(i);
 }
 
 
-//FizzBuzz
+// FizzBuzz
 
 for (let i = 1; i <= 100; i++) {
     if ((i % 3) === 0 && (i % 5) !== 0) {
@@ -21,3 +21,20 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
+
+
+// Chessboard
+
+/* Program that uses console.log to print chess board made from "#" */
+
+let size = 8;
+let board = '';
+
+for (let i = 0; i < size; i++) {
+    for (let y = 0; y < size; y++) {
+        board += (y % 2) === (i % 2) ? ' ' : '#';
+    }
+    board += '\n';
+}
+
+console.log(board);
