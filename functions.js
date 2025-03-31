@@ -48,7 +48,7 @@ where index number is a number of uppercase letters in the string. */
 function capitalLetters(string) {
     let convertedSentence = string;
     let list = [];
-    for (let i = 0; i > convertedSentence.length; i ++) {
+    for (let i = 0; i < convertedSentence.length; i ++) {
         // for loop where number of loops is based on string length
 
         if (convertedSentence[i].match(/[A-Z]/) !== null) {
