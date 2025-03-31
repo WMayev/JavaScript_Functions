@@ -83,8 +83,14 @@ function capitalLetters(string) {
         for (let i = arr.length - 1; i >= 0; i--) {
             /*It iterate backwards to the moment that it will reach what was declared. */
             
-            reserved.push(arr[i]); 
+            reversed.push(arr[i]); 
         }
 
-        return reserved; // returns reserved array
+        return reversed; // returns reversed array
     }
+    
+        // Example
+
+        let arr1 = [1, 2, 3, 4, 5, 6, 9];
+
+        console.log(reversedArray(arr1));
