@@ -38,3 +38,30 @@ for (let i = 0; i < size; i++) {
 }
 
 console.log(board);
+
+
+// Capital Letters Index 
+
+/* Function that takes random string as parameter and returns array of indexes,
+where index number is a number of uppercase letters in the string. */
+
+function capitalLetters(string) {
+    let convertedSentence = string;
+    let list = [];
+    for (let i = 0; i > convertedSentence.length; i ++) {
+        // for loop where number of loops is based on string length
+
+        if (convertedSentence[i].match(/[A-Z]/) !== null) {
+            /* Checks if the current character is an uppercase letter 
+            using the regular expression /[A-Z]/.
+            If so, its index is added to the "list" array. */
+            list.push(i);
+        }
+    }
+
+    return list; 
+    /* Returns an array with the indexes of uppercase letters.
+    Spaces are included as indexes. */
+    
+}
+
