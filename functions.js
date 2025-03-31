@@ -22,7 +22,6 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
-
 // Chessboard
 
 /* Program that uses console.log to print chess board made from "#" */
@@ -38,6 +37,7 @@ for (let i = 0; i < size; i++) {
 }
 
 console.log(board);
+
 
 
 // Capital Letters Index 
@@ -70,3 +70,21 @@ function capitalLetters(string) {
     let str = "I'm the BEST Programmer in The WorlD"
 
     console.log(capitalLetters(str));
+
+    // Output: [0, 8, 9, 10, 11, 13, 27, 31, 35]
+
+
+
+    // ReverseArray
+    // Function that takes an array as a prameter and returns it reversed. 
+
+    function reversedArray(arr) {
+        let reversed = []; 
+        for (let i = arr.length - 1; i >= 0; i--) {
+            /*It iterate backwards to the moment that it will reach what was declared. */
+            
+            reserved.push(arr[i]); 
+        }
+
+        return reserved; // returns reserved array
+    }
