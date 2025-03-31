@@ -65,3 +65,8 @@ function capitalLetters(string) {
     
 }
 
+    // Example 
+
+    let str = "I'm the BEST Programmer in The WorlD"
+
+    console.log(capitalLetters(str));
