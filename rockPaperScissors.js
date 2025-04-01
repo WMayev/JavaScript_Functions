@@ -13,3 +13,16 @@ const getUserChoice = userInput => {
             console.log('You have to choose: rock, paper or scissors.');
         }
 }
+
+const getComputerChoice = computerNumber => {
+    computerNumber = Math.floor(Math.random()* 3);
+    // Get number from 0 to 2.
+    
+    if (computerNumber === 0) {
+        return 'rock';
+      } else if (computerNumber === 1) {
+        return 'paper';
+      } else {
+        return 'scissors';
+      }
+}
