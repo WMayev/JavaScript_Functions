@@ -1,0 +1,1 @@
+console.log('Hi! Would you like to play a game?');
