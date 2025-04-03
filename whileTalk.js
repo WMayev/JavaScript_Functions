@@ -32,4 +32,5 @@ If so, adding input[i] to the resultArray. */
     }
   }
 
-  
+let resultString = resultArray.join('').toUpperCase();
+console.log(resultString)
