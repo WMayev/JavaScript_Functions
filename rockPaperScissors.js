@@ -56,3 +56,10 @@ const determineWinner = (userChoice, computerChoice) => {
         return "You're cheated, but you won."
       }
     };
+
+    const playGame = (userChoice, computerChoice) => {
+        userChoice = getUserChoice('bomb');
+        computerChoice = getComputerChoice();
+        console.log(`Your choice: ${userChoice}. Computer choice: ${computerChoice}`);
+        console.log(determineWinner(userChoice, computerChoice));
+      };
