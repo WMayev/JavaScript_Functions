@@ -58,8 +58,10 @@ const determineWinner = (userChoice, computerChoice) => {
     };
 
     const playGame = (userChoice, computerChoice) => {
-        userChoice = getUserChoice('bomb');
+        userChoice = getUserChoice();
         computerChoice = getComputerChoice();
         console.log(`Your choice: ${userChoice}. Computer choice: ${computerChoice}`);
         console.log(determineWinner(userChoice, computerChoice));
       };
+
+      playGame('bomb',);
